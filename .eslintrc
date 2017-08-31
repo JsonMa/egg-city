@@ -1,0 +1,15 @@
+{
+  "extends": "eslint-config-airbnb-base",
+  "rules": {
+    "strict": "off",
+    "class-methods-use-this": "off"
+  },
+  "globals": {
+    "describe": true,
+    "it": true,
+    "after": true,
+    "before": true,
+    "afterEach": true,
+    "beforeEach": true
+  }
+}

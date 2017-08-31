@@ -1,0 +1,52 @@
+{
+    // Use IntelliSense to learn about possible Node.js debug attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Test Egg",
+            "type": "node",
+            "request": "launch",
+            "cwd": "${workspaceRoot}",
+            "runtimeExecutable": "npm",
+            "restart": true,
+            "windows": {
+                "runtimeExecutable": "npm.cmd"
+            },
+            "env": {
+                "http_proxy": "http://127.0.0.1:8888"
+            },
+            "runtimeArgs": [
+                "run",
+                "test-local",
+                "--no-times",
+                "--",
+                "--inspect-brk"
+            ],
+            "protocol": "inspector",
+            "port": 5858,
+            "timeout": 100000,
+            "stopOnEntry": true
+        },
+        {
+            "name": "Attach Test",
+            "type": "node",
+            "protocol": "inspector",
+            "request": "attach",
+            "restart": true,
+            "port": 9229,
+            "timeout": 100000,
+            "stopOnEntry": true
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Test",
+            "configurations": [
+                "Test Egg",
+                "Attach Test"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,59 @@
+{
+  "name": "egg-city",
+  "version": "1.0.0",
+  "description": "a egg plugin of city",
+  "eggPlugin": {
+    "name": "city"
+  },
+  "keywords": [
+    "egg",
+    "eggPlugin",
+    "egg-plugin"
+  ],
+  "dependencies": {
+    "verror": "^1.10.0"
+  },
+  "devDependencies": {
+    "autod": "^2.9.0",
+    "autod-egg": "^1.0.0",
+    "egg": "^1.7.0",
+    "egg-bin": "^4.1.0",
+    "egg-ci": "^1.8.0",
+    "egg-mock": "^3.10.0",
+    "eslint": "^4.5.0",
+    "eslint-config-egg": "^5.1.0",
+    "supertest": "^3.0.0",
+    "webstorm-disable-index": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "egg-bin pkgfiles --check && npm run lint && npm run cov",
+    "pkgfiles": "egg-bin pkgfiles",
+    "autod": "autod"
+  },
+  "files": [
+    "app",
+    "config",
+    "agent.js",
+    "app.js"
+  ],
+  "ci": {
+    "version": "6, 8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eggjs/egg-city.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eggjs/egg/issues"
+  },
+  "homepage": "https://github.com/eggjs/egg-city#readme",
+  "author": "jsonma",
+  "license": "MIT"
+}
