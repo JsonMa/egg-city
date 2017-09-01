@@ -14,6 +14,12 @@ const cityError = (msg, err) => {
 };
 module.exports = app => class city extends app.Service {
 
+  /**
+   * 获取城市信息
+   * @method getCityInfo
+   * @param {string} queryInfo - 根据名称或代号进行查询，名称为中文，代号为6位数字组成的字符串
+   * @returns {object} 返回值包含了相应的省、市、区所有信息
+   */
   async getCityInfo(queryInfo) {
     assert(queryInfo && typeof queryInfo === 'string', cityError('查询信息必填且类型需为字符串'));
     const isCode = /^\d{6}$/.test(parseInt(queryInfo, 10));
