@@ -11,6 +11,8 @@
     "egg-plugin"
   ],
   "dependencies": {
+    "lei-stream": "^1.4.2",
+    "underscore": "^1.8.3",
     "verror": "^1.10.0"
   },
   "devDependencies": {
