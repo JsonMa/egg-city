@@ -20,4 +20,3 @@ test:
     - ln -s /app/node_modules node_modules
   script: 
     - npm test
-    - npm run lint
