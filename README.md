@@ -73,7 +73,7 @@ module.exports = PostController;
 
 ## Questions & Suggestions
 
-Please open an issue [here](https://github.com/eggjs/egg/issues).
+Please open an issue [here](https://github.com/JsonMa/egg-city/issues).
 
 ## License
 
