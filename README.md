@@ -9,8 +9,8 @@
 
 [npm-image]: https://img.shields.io/npm/v/egg-city.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/egg-city
-[travis-image]: https://img.shields.io/travis/eggjs/egg-city.svg?style=flat-square
-[travis-url]: https://travis-ci.org/eggjs/egg-city
+[travis-image]: https://www.travis-ci.org/JsonMa/egg-city.svg?branch=master
+[travis-url]: https://www.travis-ci.org/JsonMa/egg-city
 [codecov-image]: https://img.shields.io/codecov/c/github/eggjs/egg-city.svg?style=flat-square
 [codecov-url]: https://codecov.io/github/eggjs/egg-city?branch=master
 [david-image]: https://img.shields.io/david/eggjs/egg-city.svg?style=flat-square
