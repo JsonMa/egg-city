@@ -54,7 +54,7 @@
     "url": "git+https://github.com/eggjs/egg-city.git"
   },
   "bugs": {
-    "url": "https://github.com/eggjs/egg/issues"
+    "url": "https://github.com/eggjs/egg-city/issues"
   },
   "homepage": "https://github.com/eggjs/egg-city#readme",
   "author": "jsonma",
