@@ -11,8 +11,8 @@
 [npm-url]: https://npmjs.org/package/egg-city
 [travis-image]: https://www.travis-ci.org/JsonMa/egg-city.svg?branch=master
 [travis-url]: https://www.travis-ci.org/JsonMa/egg-city
-[codecov-image]: https://img.shields.io/codecov/c/github/eggjs/egg-city.svg?style=flat-square
-[codecov-url]: https://codecov.io/github/eggjs/egg-city?branch=master
+[codecov-image]: https://codecov.io/gh/JsonMa/egg-city/branch/master/graph/badge.svg
+[codecov-url]: https://codecov.io/gh/JsonMa/egg-city
 [david-image]: https://img.shields.io/david/eggjs/egg-city.svg?style=flat-square
 [david-url]: https://david-dm.org/eggjs/egg-city
 [snyk-image]: https://snyk.io/test/npm/egg-city/badge.svg?style=flat-square
