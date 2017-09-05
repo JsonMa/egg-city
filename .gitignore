@@ -4,6 +4,8 @@ node_modules/
 coverage/
 .idea/
 run/
+.gitlab-ci.yml
+Dockerfile
 .DS_Store
 *.swp
 .vscode/

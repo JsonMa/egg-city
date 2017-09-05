@@ -51,12 +51,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eggjs/egg-city.git"
+    "url": "git+https://github.com/JsonMa/egg-city.git"
   },
   "bugs": {
-    "url": "https://github.com/eggjs/egg-city/issues"
+    "url": "https://github.com/JsonMa/egg-city/issues"
   },
-  "homepage": "https://github.com/eggjs/egg-city#readme",
+  "homepage": "https://github.com/JsonMa/egg-city#readme",
   "author": "jsonma",
   "license": "MIT"
 }
