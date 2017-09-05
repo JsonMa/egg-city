@@ -1,6 +1,6 @@
 const { VError } = require('verror');
 const assert = require('assert');
-const readLine = require('lei-stream').readLine;
+const { readLine } = require('lei-stream');
 const path = require('path');
 const _ = require('underscore');
 
@@ -14,7 +14,6 @@ const cityError = (msg, err) => {
 };
 module.exports = (app) => {
   class City extends app.Service {
-
     /**
      * 获取城市信息
      * @method getCity
@@ -61,8 +60,8 @@ module.exports = (app) => {
         if (query.parent_code && query._id) {
           /** 若为区，则返回省、市的信息 */
           const parentCode = parseInt(query.parent_code, 10);
-          const parentResult = JSON.parse(
-            CITY_THIS.binarySearch(parentCode, DATA_CONTAINER.cities));
+          const unParsedResult = CITY_THIS.binarySearch(parentCode, DATA_CONTAINER.cities);
+          const parentResult = JSON.parse(unParsedResult);
           if (queryResult !== -1) {
             query.cityInfo = parentResult;
             DATA_CONTAINER.provinces.forEach((province) => {
