@@ -54,10 +54,11 @@ see [config/config.default.js](config/config.default.js) for more detail.
 
 ```js
 
-// {app_root}/app/controller/city.js
-const Controller = require('egg').Controller;
-class cityDemo extends Controller {
-  async apiDemo() {
+// {app_root}/app/controller/home.js
+'use strict';
+
+class HomeController extends app.Controller {
+  async index() {
 
     /**
     * 获取城市信息
@@ -65,10 +66,10 @@ class cityDemo extends Controller {
     * @param {string} queryInfo - 根据名称或代号进行查询，名称为中文，代号为6位数字组成的字符串
     * @returns {object} 返回值包含了相应的省、市、区所有信息
     */
-    const cityInfo = await ctx.service.city.getCity('360000');
+    const cityInfo = await this.service.city.getCity('四川');
   }
 }
-module.exports = PostController;
+module.exports = HomeController;
 ```
 
 ## Questions & Suggestions
