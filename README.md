@@ -64,7 +64,13 @@ class HomeController extends app.Controller {
     * 获取城市信息
     * @method getCity
     * @param {string} queryInfo - 根据名称或代号进行查询，名称为中文，代号为6位数字组成的字符串
-    * @returns {object} 返回值包含了相应的省、市、区所有信息
+    * @returns {array} 数组成员为object类型，object中包含了相应的省、市、区所有信息
+	* @description 返回值成员的属性包括：
+	* @description name（城市名称）
+	* @description code（城市代号）
+	* @description distinctInfo（拥有的所有“区/县”信息，若查询本身为“县/区”级别，则不含该字段）
+	* @description provinceInfo（所属“省份”信息，若查询本身为“省”级别，则不含该字段）
+	* @description cityInfo（包含/所属“市”信息，若查询本身为“市”级别，则不含该字段）
     */
     const cityInfo = await this.service.city.getCity('四川');
   }

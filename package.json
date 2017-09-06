@@ -1,7 +1,7 @@
 {
   "name": "egg-city",
-  "version": "1.0.2",
-  "description": "a egg plugin of city",
+  "version": "1.0.3",
+  "description": "an egg plugin of city",
   "eggPlugin": {
     "name": "city"
   },
